@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Eno Aung</title>
+<meta charset="utf-8"/>
+<link href="images/Capture.ico" rel="shortcut Icon" type="img/ico"/>
+<meta content="width=device-width" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css"/>
+<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-form .bee-form-row .bee-field button {
+			font-size: inherit;
+			font-family: inherit
+		}
+
+		.bee-row-1,
+		.bee-row-10,
+		.bee-row-11,
+		.bee-row-12,
+		.bee-row-13,
+		.bee-row-14,
+		.bee-row-15,
+		.bee-row-16,
+		.bee-row-17,
+		.bee-row-19,
+		.bee-row-2,
+		.bee-row-20,
+		.bee-row-21,
+		.bee-row-22,
+		.bee-row-3,
+		.bee-row-4,
+		.bee-row-5,
+		.bee-row-6,
+		.bee-row-8,
+		.bee-row-9 {
+			background-repeat: no-repeat
+		}
+
+		body {
+			background-color: #ffe8ec;
+			color: #000;
+			font-family: Oswald, Arial, Helvetica Neue, Helvetica, sans-serif
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2 li a,
+		a {
+			color: #60b6ab
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content.reverse,
+		.bee-row-content.reverse .bee-col {
+			-moz-transform: scale(1, -1);
+			-webkit-transform: scale(1, -1);
+			-o-transform: scale(1, -1);
+			-ms-transform: scale(1, -1);
+			transform: scale(1, -1)
+		}
+
+		.bee-row-content .bee-col-w2 {
+			flex-basis: 17%
+		}
+
+		.bee-row-content .bee-col-w3 {
+			flex-basis: 25%
+		}
+
+		.bee-row-content .bee-col-w5 {
+			flex-basis: 42%
+		}
+
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
+		}
+
+		.bee-row-content .bee-col-w7 {
+			flex-basis: 58%
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 div.label:not(.inline),
+		.bee-row-18 .bee-col-2 .bee-block-4 label:not(.inline),
+		.bee-row-21 .bee-col-4 .bee-block-3 div.label:not(.inline),
+		.bee-row-21 .bee-col-4 .bee-block-3 label:not(.inline),
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-button .content {
+			text-align: center
+		}
+
+		.bee-button a,
+		.bee-icon .bee-icon-label-right a,
+		.bee-menu ul li a {
+			text-decoration: none
+		}
+
+		.bee-divider,
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-divider .center,
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1,
+		.bee-row-10 .bee-col-2 .bee-block-1,
+		.bee-row-11 .bee-col-1 .bee-block-1,
+		.bee-row-12 .bee-col-2 .bee-block-1,
+		.bee-row-14 .bee-col-1 .bee-block-1,
+		.bee-row-16 .bee-col-1 .bee-block-1,
+		.bee-row-16 .bee-col-2 .bee-block-1,
+		.bee-row-16 .bee-col-3 .bee-block-1,
+		.bee-row-16 .bee-col-4 .bee-block-1,
+		.bee-row-17 .bee-col-1 .bee-block-1,
+		.bee-row-18 .bee-col-2 .bee-block-4 .bee-form-row:not(.bee-sidelabel) input:not([type=checkbox]):not([type=radio]),
+		.bee-row-21 .bee-col-4 .bee-block-3 .bee-form-row:not(.bee-sidelabel) input:not([type=checkbox]):not([type=radio]),
+		.bee-row-4 .bee-col-2 .bee-block-1,
+		.bee-row-5 .bee-col-2 .bee-block-1,
+		.bee-row-5 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-2 .bee-block-1,
+		.bee-row-7 .bee-col-2 .bee-block-3,
+		.bee-row-7 .bee-col-3 .bee-block-1,
+		.bee-row-7 .bee-col-3 .bee-block-3,
+		.bee-row-7 .bee-col-4 .bee-block-1,
+		.bee-row-7 .bee-col-4 .bee-block-3,
+		.bee-row-7 .bee-col-5 .bee-block-1,
+		.bee-row-7 .bee-col-5 .bee-block-3,
+		.bee-row-8 .bee-col-1 .bee-block-3,
+		.bee-row-9 .bee-col-1 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-form .bee-form-row .bee-field {
+			padding: 3px;
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+			align-items: center
+		}
+
+		.bee-form .bee-form-row .bee-field.bee-inline-field {
+			flex-wrap: nowrap;
+			align-items: flex-start
+		}
+
+		.bee-form .bee-form-row .bee-field input:not([type=checkbox]):not([type=radio]) {
+			flex-grow: 1;
+			font-family: inherit;
+			font-size: inherit
+		}
+
+		.bee-form .bee-form-row .bee-field input[type=checkbox]:not(:first-of-type) {
+			margin-left: 15px
+		}
+
+		.bee-form .bee-form-row .bee-field .bee-button-container {
+			flex-grow: 1
+		}
+
+		.bee-form input[type=color] {
+			border: none;
+			height: 38px
+		}
+
+		.bee-form input[type=color]::-webkit-color-swatch-wrapper {
+			margin: 0;
+			padding: 2px
+		}
+
+		.bee-menu ul {
+			margin: 0;
+			padding: 0
+		}
+
+		.bee-form input[type=color]::-webkit-color-swatch {
+			margin: 0;
+			padding: 0
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-icon-image {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: -4px
+		}
+
+		.bee-icon .bee-icon-label-right,
+		.bee-menu ul.bee-horizontal li {
+			display: inline-block
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-menu ul {
+			list-style-type: none
+		}
+
+		.bee-social .icon img {
+			max-height: 32px
+		}
+
+		.bee-text {
+			overflow-wrap: anywhere
+		}
+
+		.bee-row-1,
+		.bee-row-21 {
+			background-color: #dfeeee
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-13 .bee-row-content,
+		.bee-row-14 .bee-row-content,
+		.bee-row-17 .bee-row-content,
+		.bee-row-18 .bee-row-content,
+		.bee-row-19 .bee-row-content,
+		.bee-row-2 .bee-row-content,
+		.bee-row-20 .bee-row-content,
+		.bee-row-21 .bee-row-content,
+		.bee-row-22 .bee-row-content,
+		.bee-row-3 .bee-row-content,
+		.bee-row-4 .bee-row-content,
+		.bee-row-5 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-7 .bee-row-content,
+		.bee-row-8 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-1 {
+			padding-bottom: 25px;
+			padding-top: 25px
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2 {
+			color: #574554;
+			font-family: inherit;
+			font-size: 16px;
+			letter-spacing: 2px;
+			text-align: center
+		}
+
+		.bee-row-2,
+		.bee-row-20 {
+			background-color: #fff
+		}
+
+		.bee-row-18,
+		.bee-row-7 {
+			background-color: #ffe8ec;
+			background-position: center top
+		}
+
+		.bee-row-18 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-20 .bee-col-1,
+		.bee-row-4 .bee-col-1,
+		.bee-row-4 .bee-col-2,
+		.bee-row-5 .bee-col-1 {
+			padding-left: 25px;
+			padding-right: 25px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-3,
+		.bee-row-11 .bee-col-2 .bee-block-3,
+		.bee-row-12 .bee-col-1 .bee-block-3,
+		.bee-row-15 .bee-col-1 .bee-block-1,
+		.bee-row-16 .bee-col-1 .bee-block-3,
+		.bee-row-16 .bee-col-2 .bee-block-3,
+		.bee-row-16 .bee-col-3 .bee-block-3,
+		.bee-row-16 .bee-col-4 .bee-block-3,
+		.bee-row-18 .bee-col-1 .bee-block-1,
+		.bee-row-18 .bee-col-2 .bee-block-1,
+		.bee-row-18 .bee-col-2 .bee-block-3,
+		.bee-row-18 .bee-col-3 .bee-block-1,
+		.bee-row-19 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-1,
+		.bee-row-20 .bee-col-1 .bee-block-1,
+		.bee-row-21 .bee-col-1 .bee-block-2,
+		.bee-row-21 .bee-col-2 .bee-block-2,
+		.bee-row-21 .bee-col-2 .bee-block-4,
+		.bee-row-21 .bee-col-3 .bee-block-2,
+		.bee-row-21 .bee-col-3 .bee-block-5,
+		.bee-row-21 .bee-col-4 .bee-block-2,
+		.bee-row-21 .bee-col-4 .bee-block-4,
+		.bee-row-4 .bee-col-1 .bee-block-1,
+		.bee-row-5 .bee-col-1 .bee-block-7,
+		.bee-row-5 .bee-col-1 .bee-block-9,
+		.bee-row-6 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-3 .bee-block-2,
+		.bee-row-7 .bee-col-4 .bee-block-2,
+		.bee-row-7 .bee-col-5 .bee-block-2,
+		.bee-row-7 .bee-col-6 .bee-block-1,
+		.bee-row-9 .bee-col-2 .bee-block-3 {
+			padding: 10px
+		}
+
+		.bee-row-16 .bee-col-1,
+		.bee-row-16 .bee-col-2,
+		.bee-row-16 .bee-col-3,
+		.bee-row-16 .bee-col-4,
+		.bee-row-3 .bee-col-1 .bee-block-1 {
+			padding: 20px
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1,
+		.bee-row-5 .bee-col-1 .bee-block-3,
+		.bee-row-5 .bee-col-1 .bee-block-5 {
+			padding-left: 10px;
+			padding-right: 10px
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-4,
+		.bee-row-5 .bee-col-1 .bee-block-8 {
+			padding-bottom: 10px;
+			padding-top: 10px
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-6 {
+			padding: 15px
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-10 {
+			padding: 10px;
+			text-align: center
+		}
+
+		.bee-row-5 .bee-col-2 {
+			padding-bottom: 20px;
+			padding-left: 25px;
+			padding-right: 25px
+		}
+
+		.bee-row-6 .bee-col-1 {
+			padding-top: 25px
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2,
+		.bee-row-18 .bee-col-2 .bee-block-2,
+		.bee-row-6 .bee-col-1 .bee-block-2 {
+			padding-bottom: 15px;
+			padding-top: 5px
+		}
+
+		.bee-row-7 {
+			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/3681/MothersDay__background_rt.png');
+			background-repeat: repeat
+		}
+
+		.bee-row-7 .bee-col-1,
+		.bee-row-7 .bee-col-2,
+		.bee-row-7 .bee-col-3,
+		.bee-row-7 .bee-col-4,
+		.bee-row-7 .bee-col-5 {
+			padding: 5px 10px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2,
+		.bee-row-11 .bee-col-2 .bee-block-2,
+		.bee-row-12 .bee-col-1 .bee-block-2,
+		.bee-row-22 .bee-col-1,
+		.bee-row-7 .bee-col-6,
+		.bee-row-9 .bee-col-2 .bee-block-2 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-8 .bee-col-1 .bee-block-1 {
+			padding-bottom: 5px;
+			padding-top: 15px
+		}
+
+		.bee-row-8 .bee-col-1 .bee-block-2 {
+			padding: 30px
+		}
+
+		.bee-row-10 .bee-row-content,
+		.bee-row-11 .bee-row-content,
+		.bee-row-12 .bee-row-content,
+		.bee-row-15 .bee-row-content,
+		.bee-row-16 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			background-color: #fff;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-10 .bee-col-1,
+		.bee-row-11 .bee-col-2,
+		.bee-row-12 .bee-col-1,
+		.bee-row-9 .bee-col-2 {
+			padding-bottom: 20px;
+			padding-top: 30px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1,
+		.bee-row-11 .bee-col-2 .bee-block-1,
+		.bee-row-12 .bee-col-1 .bee-block-1,
+		.bee-row-9 .bee-col-2 .bee-block-1 {
+			padding: 20px 10px 5px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-4,
+		.bee-row-11 .bee-col-2 .bee-block-4,
+		.bee-row-12 .bee-col-1 .bee-block-4,
+		.bee-row-9 .bee-col-2 .bee-block-4 {
+			color: #000;
+			font-family: inherit;
+			font-size: 14px;
+			padding-bottom: 10px;
+			text-align: center
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-5,
+		.bee-row-11 .bee-col-2 .bee-block-5,
+		.bee-row-12 .bee-col-1 .bee-block-5,
+		.bee-row-16 .bee-col-1 .bee-block-4,
+		.bee-row-16 .bee-col-2 .bee-block-4,
+		.bee-row-16 .bee-col-3 .bee-block-4,
+		.bee-row-16 .bee-col-4 .bee-block-4,
+		.bee-row-9 .bee-col-2 .bee-block-5 {
+			padding: 10px 10px 30px;
+			text-align: center
+		}
+
+		.bee-row-13 .bee-col-1 .bee-block-1 {
+			padding-bottom: 20px;
+			width: 100%
+		}
+
+		.bee-row-15 .bee-col-1 {
+			padding: 5px 20px
+		}
+
+		.bee-row-16 .bee-col-1 .bee-block-2,
+		.bee-row-16 .bee-col-2 .bee-block-2,
+		.bee-row-16 .bee-col-3 .bee-block-2,
+		.bee-row-16 .bee-col-4 .bee-block-2 {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 15px
+		}
+
+		.bee-row-18 {
+			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/3681/back_flores.png');
+			background-repeat: no-repeat
+		}
+
+		.bee-row-18 .bee-col-2 {
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 35px
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 {
+			font-family: inherit;
+			font-size: 16px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			text-align: center
+		}
+
+		.bee-row-19 .bee-col-1 {
+			padding: 25px 25px 30px
+		}
+
+		.bee-row-21 .bee-col-1,
+		.bee-row-21 .bee-col-2,
+		.bee-row-21 .bee-col-3,
+		.bee-row-21 .bee-col-4 {
+			padding: 15px 10px
+		}
+
+		.bee-row-21 .bee-col-1 .bee-block-1,
+		.bee-row-21 .bee-col-2 .bee-block-1,
+		.bee-row-21 .bee-col-3 .bee-block-1,
+		.bee-row-21 .bee-col-4 .bee-block-1 {
+			padding: 25px 15px 5px
+		}
+
+		.bee-row-21 .bee-col-1 .bee-block-3,
+		.bee-row-21 .bee-col-2 .bee-block-3,
+		.bee-row-21 .bee-col-3 .bee-block-3 {
+			padding: 5px 15px
+		}
+
+		.bee-row-21 .bee-col-1 .bee-block-4 {
+			padding: 10px;
+			width: 100%
+		}
+
+		.bee-row-21 .bee-col-3 .bee-block-4 {
+			padding: 10px 20px;
+			text-align: left
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 {
+			font-family: inherit;
+			font-size: 16px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center
+		}
+
+		.bee-row-22 .bee-col-1 .bee-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2 li {
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 15px
+		}
+
+		@media (max-width:768px) {
+			.bee-form form {
+				width: 100% !important
+			}
+
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon-image,
+		.bee-row-11 .bee-col-2 .bee-block-4 .bee-icon-image,
+		.bee-row-12 .bee-col-1 .bee-block-4 .bee-icon-image,
+		.bee-row-9 .bee-col-2 .bee-block-4 .bee-icon-image {
+			padding: 5px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-4 .bee-icon,
+		.bee-row-11 .bee-col-2 .bee-block-4 .bee-icon,
+		.bee-row-12 .bee-col-1 .bee-block-4 .bee-icon,
+		.bee-row-22 .bee-col-1 .bee-block-1 .bee-icon,
+		.bee-row-9 .bee-col-2 .bee-block-4 .bee-icon {
+			margin-left: 0;
+			margin-right: 0
+		}
+
+		.bee-row-22 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4,
+		.bee-row-18 .bee-col-2 .bee-block-4 .bee-button-container,
+		.bee-row-21 .bee-col-4 .bee-block-3 {
+			text-align: "center"
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 form {
+			display: inline-block;
+			width: 100%
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 div.label,
+		.bee-row-18 .bee-col-2 .bee-block-4 label,
+		.bee-row-21 .bee-col-4 .bee-block-3 div.label,
+		.bee-row-21 .bee-col-4 .bee-block-3 label {
+			color: #574554;
+			line-height: 200%;
+			text-align: left;
+			display: block
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 ::-webkit-input-placeholder {
+			color: #574554
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 :-moz-placeholder {
+			color: #574554
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 ::-moz-placeholder {
+			color: #574554
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 :-ms-input-placeholder {
+			color: #574554
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 .bee-field>label:first-child,
+		.bee-row-18 .bee-col-2 .bee-block-4 div.label,
+		.bee-row-21 .bee-col-4 .bee-block-3 .bee-field>label:first-child,
+		.bee-row-21 .bee-col-4 .bee-block-3 div.label {
+			padding: 3px
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 .bee-field.bee-inline-field input[type=checkbox],
+		.bee-row-21 .bee-col-4 .bee-block-3 .bee-field.bee-inline-field input[type=checkbox] {
+			position: relative;
+			color: purple;
+			top: 7px
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 input:not([type=checkbox]):not([type=radio]):not([type=image]) {
+			background-color: #fbffff;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-radius: 4px;
+			border-right: 1px solid transparent;
+			border-top: 1px solid transparent;
+			color: #574554;
+			padding: 5px;
+			min-height: 42px
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 input:not([type=checkbox]):not([type=radio]):focus,
+		.bee-row-21 .bee-col-4 .bee-block-3 input:not([type=checkbox]):not([type=radio]):focus {
+			outline-color: #3aaee0
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 button {
+			background-color: #eca21f;
+			border-bottom: 0 solid #fff;
+			border-left: 0 solid #fff;
+			border-radius: 0;
+			border-right: 0px solid #fff;
+			border-top: 0 solid #fff;
+			color: #fff;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: 100%
+		}
+
+		.bee-row-21 .bee-col-4 .bee-block-3 .bee-button-container {
+			padding-top: 5px;
+			text-align: "center"
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 form {
+			display: inline-block;
+			width: 90%
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 ::-webkit-input-placeholder {
+			color: #574554
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 :-moz-placeholder {
+			color: #574554
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 ::-moz-placeholder {
+			color: #574554
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 :-ms-input-placeholder {
+			color: #574554
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 input:not([type=checkbox]):not([type=radio]):not([type=image]) {
+			background-color: #fff;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-radius: 4px;
+			border-right: 1px solid transparent;
+			border-top: 1px solid transparent;
+			color: #574554;
+			padding: 5px;
+			min-height: 42px
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-4 button {
+			background-color: #eca21f;
+			border-bottom: 0 solid transparent;
+			border-left: 0 solid transparent;
+			border-radius: 1px;
+			border-right: 0px solid transparent;
+			border-top: 0 solid transparent;
+			color: #fff;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: 100%
+		}
+	</style>
+</head>
+<body>
+<div class="bee-page-container">
+<div class="bee-row bee-row-1">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-image"><img alt="Your Logo" class="bee-center bee-autowidth" src="images/Your_Logo.png" style="max-width:166px;"/></div>
+<div class="bee-block bee-block-2 bee-menu">
+<nav class="bee-menu">
+<ul class="bee-horizontal">
+<li><a href="https://www.facebook.com/eno.ranaung.9" target="_unblank" title="Contact to me with Facebook">Click here to contact on Facebook</a></li>
+
+</ul>
+</nav>
+
+</div>
+</div>
+</div>
+<div style="font-size: 12px; line-height: 16px; text-align: center; color: #ff0000;" margin="0px,0px,10px,0px"> Hello Everyone! Welcome to my Web Page</br></br></div>
+</div>
+<div class="bee-row bee-row-2">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-3">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-4">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w6">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w6">
+<div class="bee-block bee-block-1 bee-image"><img alt="Gifts For Mom" class="bee-center bee-autowidth" src="images/imagen_flores.png" style="max-width:670px;"/></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-5">
+<div class="bee-row-content reverse">
+<div class="bee-col bee-col-1 bee-col-w6">
+<div class="bee-block bee-block-1 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #ff0077;">
+<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="font-size: 30px; line-height: 36px;">HAPPY MOTHER'S DAY</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="center" style="border-top:1px dashed #60B6AB;width:50%;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #cc00ff;">
+<div class="bee-block bee-block-10 bee-button"><div class="bee-button-content" href="http://www.example.com" style="font-size: 12px; line-height: 24px; background-color: #00ff62; border-bottom: 0px solid #8a3b8f; border-left: 0px solid #8a3b8f; border-radius: 0px; border-right: 0px solid #8a3b8f; border-top: 0px solid #8a3b8f; color: #ffffff; font-family: inherit; max-width: 100%; padding-bottom: 5px; padding-left: 30px; padding-right: 30px; padding-top: 5px; width: auto; display: inline-block;"><span style="font-size: 16px; line-height: 200%; word-break: break-word;">
+	<span style="font-size: 22px; line-height: 44px;">This WebPage is for my Mom</span></div></span></div>
+</div>
+</div>
+<div class="bee-block bee-block-4 bee-divider">
+<div class="center" style="border-top:1px dashed #60B6AB;width:50%;"></div>
+</div>
+<div class="bee-block bee-block-5 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #002fff;">
+<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="font-size: 16px; line-height: 40px;">ကမ္ဘာပေါ်မှာရှိ အမေများအားလုံး</br>❤❤......ကျန်းမာပါစေ.....❤❤</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-6 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #574554; font-family: inherit;">
+<p style="font-size: 9px; line-height: 10px; text-align: center;"><span style="font-size: 12px; line-height: 31px;">
+	ကျွန်ုပ်ဘဝမှာ ဘယ်လိုမှအစားထိုးလို့မရတဲ့ သူတစ်ယောက်ရှိတယ် </br>
+.....💘💘သူကကျွန်တော့်ရဲ့ နှလုံးသားပါ💘💘.....
+</br>
+သူဟာ.......
+</br>
+ကျွန်တော့်ရဲ့ ဒီနေ့ဒီအရွယ်ထိ အဖေရယ်၊ အမေရယ်နှင့် အားမငယ်ရလေအောင်
+</br>
+အခက်ခဲပေါင်းများသွာကို ရင်ဆိုင်ကျော်ဖြတ်ခဲ့တဲ့သူ ချစ်မေမေပေါ့....</br>
+သူက ကျွန်တော့်ဘဝရဲ့ ကြယ်ပွင့်ပါ... လက်ဆောင်ရယ်လို့သားမပေးနိုင်ပေမယ့်</br>
+ရတဲ့အချိန်တိုလေးမှာ အမေ့အတွက် ဒီ Mother's Day Card Web Page လေးဖန်တီးရင်းနှင့် </br>
+အမေ့ရဲ့ ဒီ Website သေးလေးကနေ အဝေးကသား ဆုမွန်ကောင်းတောင်းလိုက်ပါတယ် မေမေ...
+</br>
+💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗 
+</br>
+အမေအမြဲကျန်းမာပါစေ..... အမေအမြဲ ပျော်ရွှင်ပါစေ...</br>
+အမေ့ကို သားချစ်တယ်..... အမေဟာ သားတွက်
+ဘုရားရှင်ပေးတဲ့ ဆုလဒ်တစ်ခုပါ......</br>
+အမေ့အပေါ် ဘုရားရှင်သာ၍မစပါစေ.....ဘုရားရှင်ရဲ့ ငြိမ်သက်ခြင်း၊
+</br>
+ကြွယ်ဝခြင်း၊ ချမ်းသာခြင်း၊ အောင်မြင်ခြင်းတွေနှင့်အတူ ပျော်ရွှင်မှုတွေသာ၍ရှိပါစေ မေမေ
+</br>
+</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-8 bee-divider">
+<div class="center" style="border-top:1px dashed #574554;width:50%;"></div>
+</div>
+<div class="bee-block bee-block-9 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: TimesNewRoman, 'Times New Roman', Times, Beskerville, Georgia, serif; color: rgb(60, 255, 0);">
+<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="font-size: 20px; line-height: 21px;">
+	<b>ℕ𝕪𝕒𝕞𝕣𝕒𝕟𝕧 𝕍𝕖𝕚𝕫</b>
+</span></p>
+</div>
+</div>
+<!--- Something Like Messages --->
+</div>
+<div class="bee-col bee-col-2 bee-col-w6">
+<div class="bee-block bee-block-1 bee-image"><video class="bee-center bee-autowidth" style="width: 100%" src="images/imagen_central.mp4" controls ="autoplay"></video></div>
+<div class="bee-block bee-block-2 bee-image"></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-6">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-text">
+<div class="bee-text-content" style="line-height: 120%; font-size: 12px; color: #ff00c8; font-family: inherit;">
+<p style="font-size: 14px; line-height: 16px; text-align: center;">
+	<span style="font-size: auto; line-height: 31px;">
+		💗ရှားပါးတဲ့အမေ့ရဲ့ ဓါတ်ပုံလေးတွေ💗</span></p>
+</div>
+</div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="center" style="border-top:1px dashed #574554;width:100%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-7">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w2">
+<div class="bee-block bee-block-1 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_02.jpg" style="max-width:220px;"/></div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_05.jpg" style="max-width:220px;"/></div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w2">
+<div class="bee-block bee-block-1 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_03.jpg" style="max-width:220px;"/></div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_06.jpg" style="max-width:220px;"/></div>
+</div>
+<div class="bee-col bee-col-4 bee-col-w2">
+<div class="bee-block bee-block-1 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_04.jpg" style="max-width:220px;"/></div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_08.jpg" style="max-width:220px;"/></div>
+</div>
+<div class="bee-col bee-col-5 bee-col-w2">
+<div class="bee-block bee-block-1 bee-image"><img  class="bee-center bee-autowidth" src="images/mama_01.jpg" style="max-width:220px;"/></div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-image"><img class="bee-center bee-autowidth" src="images/mama_07.jpg" style="max-width:220px;"/></div>
+</div>
+<div class="bee-col bee-col-6 bee-col-w2">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-8">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="center" style="border-top:1px dashed #574554;width:100%;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/sombra_top.png" style="max-width:1440px;"/></div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-9">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w7">
+<div class="bee-block bee-block-1 bee-image" style="margin: 12px; margin-top: 90px;">
+	<video src="images/A_May_Myit_tar_720.mp4" controls ="autoplay" width="95%"></video>
+</div>
+</div>
+<!--Right Side-->
+<div class="bee-col bee-col-2 bee-col-w5">
+<img src="images/9.jpg" width="100%">
+</div>
+<!---Left Side-->
+</div>
+</div>
+<!--jncdc-->
+<div>
+	<img src="images/productos_jerseis.jpg" margin="40px" style="width: 100%;" />
+</div>
+<div margin="100px">
+</br>
+</br>
+</br>
+<p style="font-size: 14px; line-height: 16px; text-align: center;">This Website is for only this year (2022)</br>
+</br></br>
+လာရောက်ကြည့်ရှုခဲ့ကြသော ညီအစ်ကိုမောင်နှမများအားလုံးကို အထူးကျေးဇူးတင်ပါတယ်နော်🥰🥰</p>
+</br>
+</br>
+</br>
+</div>
+</body>
+</html>
